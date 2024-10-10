@@ -78,11 +78,12 @@ WSGI_APPLICATION = 'palmaxSMS.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'palmaxdb',
-        'USER' : 'postgres',
-        'PASSWORD' : '1234',
-        'HOST' : 'localhost',
-        'PORT' : '4747',
+        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'NAME': 'palmaxdb',
+        # 'USER' : 'postgres',
+        # 'PASSWORD' : '1234',
+        # 'HOST' : 'localhost',
+        # 'PORT' : '4747',
     }
 }
 

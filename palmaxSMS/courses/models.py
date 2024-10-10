@@ -1,11 +1,18 @@
 from django.db import models
 from users.models import Teacher
 
+
 # Create your models here.
+
+class Topic(models.Model):
+    name = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
 
 class Subject(models.Model):
     name = models.CharField(max_length=100)
-    topics = models.TextField()  # Can hold a list of topics
+    topics = models.ForeignKey(Topic, on_delete=models.CASCADE) # Can hold a list of topics
     duration = models.DurationField()  # Store duration in a timedelta format
 
     def __str__(self):
@@ -19,7 +26,3 @@ class Course(models.Model):
 
     def __str__(self):
         return self.name
-    
-class Topics(models.Model):
-    name = models.CharField(max_length=100)
-    
