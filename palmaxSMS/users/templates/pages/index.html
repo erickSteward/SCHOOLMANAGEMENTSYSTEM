@@ -1,0 +1,40 @@
+{% extends 'pages/base.html' %}
+{% load static %}
+{% block content %} 
+    <body>
+        <br>
+        <br>
+        <div class="text-center">
+            <h3> Palmax School Mangement System</h3>
+            <br>
+            <h5> Manage you School Activies Effectivily </h5>
+            <hr>
+            <br>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/students.jpg' %}" class="card-img-top" alt="student Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Manage Students</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/students.jpg' %}" class="card-img-top" alt="student Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Manage Teachers</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/students.jpg' %}" class="card-img-top" alt="student Image">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Manage Courses</a>
+            </div>
+          </div>
+
+
+    </body>        
+
+
+{% endblock %}
